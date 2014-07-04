@@ -1,5 +1,5 @@
 
-# Howto run unbound in docker, and route traffic to them using LVS
+## Howto run unbound in docker, and route traffic to the containers using LVS
 
 ### Pull down unbound containers
 
