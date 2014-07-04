@@ -150,14 +150,10 @@ Enter each of the containers using nsenter:
 
 And it doesn't work... hmmm.... Tcpdump tells me packets are routed to the containers, and unbound replies:
 
-	15:27:45.738352 IP (tos 0x0, ttl 64, id 59733, offset 0, flags [none], proto UDP (17), length 68)
-    142.213-167-104.customer.lyse.net.56340 > 172.17.0.141.domain: [bad udp cksum 0xeb15 -> 0x52fc!] 5525+ [1au] A? unbound.net. ar: . OPT UDPsize=4096 (40)
-	15:27:45.738360 IP (tos 0x0, ttl 64, id 59733, offset 0, flags [none], proto UDP (17), length 68)
-    142.213-167-104.customer.lyse.net.56340 > 172.17.0.141.domain: [bad udp cksum 0xeb15 -> 0x52fc!] 5525+ [1au] A? unbound.net. ar: . OPT UDPsize=4096 (40)
-	15:27:45.738489 IP (tos 0x0, ttl 64, id 59521, offset 0, flags [none], proto UDP (17), length 84)
-    172.17.0.141.domain > 142.213-167-104.customer.lyse.net.56340: [bad udp cksum 0xeb25 -> 0x9bce!] 5525$ q: A? unbound.net. 1/0/1 unbound.net. [1h36m7s] A 213.154.224.1 ar: . OPT UDPsize=4096 (56)
-	15:27:45.738489 IP (tos 0x0, ttl 64, id 59521, offset 0, flags [none], proto UDP (17), length 84)
-    172.17.0.141.domain > 142.213-167-104.customer.lyse.net.56340: [bad udp cksum 0xeb25 -> 0x9bce!] 5525$ q: A? unbound.net. 1/0/1 unbound.net. [1h36m7s] A 213.154.224.1 ar: . OPT UDPsize=4096 (56)
+	15:27:45.738352 IP (tos 0x0, ttl 64, id 59733, offset 0, flags [none], proto UDP (17), length 68) 142.213-167-104.customer.lyse.net.56340 > 172.17.0.141.domain: [bad udp cksum 0xeb15 -> 0x52fc!] 5525+ [1au] A? unbound.net. ar: . OPT UDPsize=4096 (40)
+	15:27:45.738360 IP (tos 0x0, ttl 64, id 59733, offset 0, flags [none], proto UDP (17), length 68) 142.213-167-104.customer.lyse.net.56340 > 172.17.0.141.domain: [bad udp cksum 0xeb15 -> 0x52fc!] 5525+ [1au] A? unbound.net. ar: . OPT UDPsize=4096 (40)
+	15:27:45.738489 IP (tos 0x0, ttl 64, id 59521, offset 0, flags [none], proto UDP (17), length 84) 172.17.0.141.domain > 142.213-167-104.customer.lyse.net.56340: [bad udp cksum 0xeb25 -> 0x9bce!] 5525$ q: A? unbound.net. 1/0/1 unbound.net. [1h36m7s] A 213.154.224.1 ar: . OPT UDPsize=4096 (56)
+	15:27:45.738489 IP (tos 0x0, ttl 64, id 59521, offset 0, flags [none], proto UDP (17), length 84) 172.17.0.141.domain > 142.213-167-104.customer.lyse.net.56340: [bad udp cksum 0xeb25 -> 0x9bce!] 5525$ q: A? unbound.net. 1/0/1 unbound.net. [1h36m7s] A 213.154.224.1 ar: . OPT UDPsize=4096 (56)
 
 
 But I see no replies on the client...
