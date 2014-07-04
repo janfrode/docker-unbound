@@ -1,7 +1,7 @@
 
 ## Howto run unbound in docker, and route traffic to the containers using LVS
 
-### Pull down unbound containers
+### Pull down unbound container
 
 	docker pull janfrode/unbound
 
