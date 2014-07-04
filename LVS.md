@@ -148,7 +148,7 @@ Enter each of the containers using nsenter:
 
 ### Testing
 
-And it doesn't work... hmmm.... Tcpdump tells me packets are routed to the containers:
+And it doesn't work... hmmm.... Tcpdump tells me packets are routed to the containers, and unbound replies:
 
 	15:27:45.738352 IP (tos 0x0, ttl 64, id 59733, offset 0, flags [none], proto UDP (17), length 68)
     142.213-167-104.customer.lyse.net.56340 > 172.17.0.141.domain: [bad udp cksum 0xeb15 -> 0x52fc!] 5525+ [1au] A? unbound.net. ar: . OPT UDPsize=4096 (40)
